@@ -58,7 +58,7 @@ function searchStartingLetter() {
   console.log("Search by Starting Letter");
 }
 
-// Display Names within a Range of Lengths
+// Display Names with a Specific Length
 function searchLength() {
   console.log("Search by Name Length");
 }
