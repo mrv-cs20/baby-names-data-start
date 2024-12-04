@@ -8,11 +8,8 @@ let menuSelect = document.getElementById("menu-select");
 let container = document.getElementById("container");
 let nameCountSpan = document.getElementById("name-count");
 
-// Initialize Array of Character Objects from json file
-let babyData = [];
-fetch("baby-names-data.json")
-  .then((res) => res.json())
-  .then((data) => (babyData = data));
+// Initialize Array of Character Objects from baby-names-data.js
+let babyData = getBabyData();
 
 // Event Listener on Go Button
 goBtn.addEventListener("click", goBtnClicked);
